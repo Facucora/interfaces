@@ -1,7 +1,11 @@
 package interfacesConGeometria;
 
+import java.util.Objects;
+
 public class Segmento implements Comparable<Segmento>, Desplazable, EsParalelo{
 	
+
+
 	private Punto puntoA;
 	private Punto puntoB;
 	
@@ -51,5 +55,22 @@ public class Segmento implements Comparable<Segmento>, Desplazable, EsParalelo{
 			return (a / b == c / d);
  		}
 		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(puntoA, puntoB);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Segmento other = (Segmento) obj;
+		return Objects.equals(puntoA, other.puntoA) && Objects.equals(puntoB, other.puntoB);
 	}
 }
