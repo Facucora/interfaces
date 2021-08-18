@@ -19,9 +19,12 @@ import interfacesConGeometria.Segmento;
 
 public class FigurasSegmentosTest {
 	
+	//comentario test
+	
 	Segmento s1;
 	Segmento s2;
 	Circulo cic;
+	circulo cic2;
 	Cuadrado cuc;
 	Figura cif;
 	Figura cuf;
