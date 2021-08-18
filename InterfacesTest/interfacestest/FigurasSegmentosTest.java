@@ -24,7 +24,7 @@ public class FigurasSegmentosTest {
 	Segmento s1;
 	Segmento s2;
 	Circulo cic;
-	circulo cic2;
+	Circulo cic2;
 	Cuadrado cuc;
 	Figura cif;
 	Figura cuf;
